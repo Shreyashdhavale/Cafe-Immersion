@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const FEATURES = [
+const features = [
   { icon: "💰", title: "Affordable Pricing", desc: "Budget-friendly meals starting ₹15. Most items between ₹100–₹200." },
   { icon: "🍽️", title: "Wide Variety", desc: "From morning chai to evening snacks, we've got it all." },
   { icon: "⭐", title: "Consistent Quality", desc: "Every bite is prepared with care and fresh ingredients." },
@@ -8,35 +8,61 @@ const FEATURES = [
   { icon: "🛋️", title: "Comfortable Vibe", desc: "Chill, friendly environment perfect for hanging out." },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15 }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
 export function Features() {
   return (
-    <section id="why-us" className="py-24 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="features" className="py-24 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black mb-4">Why Choose Us?</h2>
-          <div className="w-24 h-1.5 bg-primary mx-auto rounded-full" />
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4"
+          >
+            Why Choose <span className="text-primary">Cafe Aasaca?</span>
+          </motion.h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
-          {FEATURES.map((feature, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`glass-card rounded-3xl p-8 text-center flex flex-col items-center ${
-                i === 3 ? "lg:col-start-2" : i === 4 ? "lg:col-start-3" : ""
-              }`}
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center"
+        >
+          {features.map((feature, i) => (
+            <motion.div 
+              key={i} 
+              variants={itemVariants}
+              className={`bg-card rounded-3xl p-8 shadow-lg border border-border/50 hover:border-primary/30 hover:shadow-xl transition-all duration-300 group ${
+                i >= 3 ? "lg:col-span-1.5" : ""
+              } ${i === 4 ? "lg:col-start-2 lg:col-span-1" : ""}`}
             >
-              <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center text-4xl mb-6 shadow-inner transform -rotate-3 group-hover:rotate-0 transition-transform duration-300">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.desc}</p>
+              <h3 className="text-xl font-bold text-foreground mb-3">{feature.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                {feature.desc}
+              </p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );
