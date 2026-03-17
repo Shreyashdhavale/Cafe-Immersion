@@ -1,0 +1,18 @@
+packages:
+  "framer-motion": "Crucial for high-quality scroll reveals, parallax effects, and smooth UI transitions to meet the 'immersive 3D' requirement."
+  "lucide-react": "For UI icons like menu toggle, location, etc."
+  "clsx": "For conditional class merging in reusable components."
+  "tailwind-merge": "For resolving Tailwind class conflicts."
+
+images:
+  - path: "artifacts/cafe-aasaca/public/images/hero-texture.png"
+    description: "Subtle warm grainy noise texture to overlay on backgrounds, helping create a cozy cafe atmosphere without being overpowering."
+    aspect_ratio: "16:9"
+  - path: "artifacts/cafe-aasaca/public/images/logo.png"
+    description: "Modern, minimal cafe logo mark for 'Cafe Aasaca' using warm terracotta and coffee brown tones, transparent background."
+    aspect_ratio: "1:1"
+
+notes:
+  - "Building as a purely frontend single-page application."
+  - "Using Framer Motion for scroll animations and parallax to simulate the 3D immersive feel without heavy WebGL overhead."
+  - "Implementing smooth scrolling via native CSS scroll-behavior: smooth."

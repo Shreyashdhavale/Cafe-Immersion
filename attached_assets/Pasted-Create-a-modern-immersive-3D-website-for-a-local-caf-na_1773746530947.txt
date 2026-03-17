@@ -1,0 +1,69 @@
+Create a modern, immersive 3D website for a local café named Cafe Aasaca, located in Manjri Budruk, Hadapsar, Pune.
+
+The website should have a warm, cozy, and youthful vibe, designed especially for college students and young professionals. Use a 3D interactive design with smooth animations, floating elements, and parallax scrolling.
+
+Design Style:
+Use warm tones like coffee brown, beige, cream, and soft orange.
+Include 3D elements like coffee cups, pizza slices, maggi bowls, sandwiches, and beverages floating subtly in the background.
+Add smooth transitions, hover effects, and a modern UI with soft shadows and glassmorphism.
+
+Hero Section (Landing):
+Display a 3D rotating café scene or food elements (coffee, pizza, maggi).
+Tagline: "Your Daily Hangout Spot in Manjri"
+Subtext: A cozy place known for great taste, quick bites, and refreshing drinks.
+Add call-to-action buttons: "Explore Menu" and "Visit Us".
+
+About Section:
+Cafe Aasaca is a budget-friendly, cozy local café located on Manjri-Hadapsar Road.
+It is popular among students and locals for its tasty food, quick service, and comfortable hangout environment.
+The café focuses on providing a variety of delicious snacks and beverages at affordable prices.
+
+Menu Section (Important – Full Menu Display):
+Create a well-structured, visually rich menu section with categories.
+Use 3D cards or grid layout with hover animations.
+
+Categories to include:
+
+Beverages:
+Hot coffee, cold coffee, tea, shakes, cold drinks
+
+Snacks and Fast Food:
+Maggi varieties
+Pizza varieties
+Sandwiches (grilled and regular)
+Burgers
+Fries and quick bites
+
+Each item should include:
+Name, short description, and price or price range
+
+Do not highlight a single product as the main focus. Present the café as a place offering a complete and satisfying menu.
+
+Why Choose Us Section:
+Affordable pricing (₹100–₹200)
+Wide variety of food options
+Good taste and consistent quality
+Fast service
+Comfortable and friendly environment
+
+Location Section:
+Embed Google Maps
+Show address: Manjri-Hadapsar Road, Pune
+Add a "Get Directions" button
+
+Gallery Section:
+Add an interactive gallery or carousel showing food items, café setup, and customer experience
+
+Contact Section:
+Phone number placeholder
+Opening hours: 9 AM to 10 PM
+Social media icons
+
+Extra Features:
+Dark and light mode toggle
+Smooth scroll animations
+Mobile responsive design
+Fast loading performance
+
+Overall Feel:
+The website should represent Cafe Aasaca as a complete food and hangout destination, not focused on a single item but showcasing variety, taste, and affordability with a modern 3D experience.
